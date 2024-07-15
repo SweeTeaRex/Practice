@@ -1,5 +1,5 @@
 
-// Program that tells you Pi to the nth digit
+// Program that tells you Pi to the 20th digit
 
 
 #include <stdio.h>

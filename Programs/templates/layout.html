@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>{% block title %} BlackJack College {% endblock %}</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      function parallax_height() {
+          // Get the current scroll position
+          var scroll_top = $(window).scrollTop();
+          // Get the top position of the section
+          var sample_section_top = $(".sample-section").offset() ? $(".sample-section").offset().top: 0;
+          // Get the height of the header section
+          var header_height = $(".sample-header-section").outerHeight() || 0;
+          
+          // Adjust the height of the header section based on scroll position
+          $(".sample-header").css({ height: Math.max(header_height - scroll_top, 0) });
+      }
+
+      // Initial call to set the height when the page loads
+      parallax_height();
+
+      // Update the height when the window is scrolled
+      $(window).scroll(function() {
+          parallax_height();
+      });
+
+      // Update the height when the window is resized
+      $(window).resize(function() {
+          parallax_height();
+      });
+  });
+  </script>
+</head>
+<body>
+
+  
+  <div class="sample-header" data-user-id="{{ user_id }}">
+    {% if user_id %}
+        <a href="/playerpage" class="header-link">
+    {% else %}
+        <a href="/login" class="header-link">
+    {% endif %}
+            <div class="sample-header-section">
+                <!-- Content of the header section goes here -->
+            
+            <h1 class="animate__animated animate__backInDown">Welcome to BlackJack College</h1>
+            <h2>Learn or enhance your BlackJack gameplay</h2>
+            </div>
+    </a>
+</div>
+
+<div class="white-text">
+{% block content %}
+  
+{% endblock %}
+</div>
+  </body>
+  </html>

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Register for College
+{% endblock %}
+
+{% block content %}
+<div>
+    <br>
+    <h1>Register</h1>
+</div>   
+
+<div class="container">
+    <div class="column photorepeat">
+        
+    </div>
+    <div class="column">
+        <form action="/register" method="post">
+            <div>
+                <input autocomplete="off" autofocus name="firstname" placeholder="First Name" type="text">
+            </div>
+            <div>
+                <input autocomplete="off" name="username" placeholder="Username" type="text">
+            </div>
+            <div>
+                <input name="password" placeholder="Password" type="text">
+            </div>
+            <div>
+                <input name="confirmation" placeholder="Confirm Password" type="text">
+            </div>
+            <button class="myButton" type="submit">Register</button>
+            </form>
+        
+    </div>
+    <div class="column photorepeat">
+        
+    </div>
+    </div>
+
+
+
+
+{% endblock %}

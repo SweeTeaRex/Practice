@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Log In!
+{% endblock %}
+
+{% block content %}
+<div>
+    <br>
+    <h1>Log In</h1>
+</div>
+
+<div class="container">
+    <div class="column photorepeat">
+        
+    </div>
+    <div class="column">
+            <form action="/login" method="post">
+        <div>
+            <input autocomplete="off" autofocus name="username" placeholder="Username" type="text">
+        </div>
+        <div>
+            <input name="password" placeholder="Password" type="text">
+        </div>
+        <button class="myButton" type="submit">Log In</button><br><br>
+        <a href="/" class="myButton">Homepage</a><br><br>
+    </form>
+        
+    </div>
+    <div class="column photorepeat">
+        
+    </div>
+    </div>
+{% endblock %}

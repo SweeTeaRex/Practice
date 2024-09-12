@@ -1,0 +1,175 @@
+/* Login Page Header CSS */
+.webmadewell {
+    background-color: white;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .sample-header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: url("/static/images/blackjackgame.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    z-index: -2;
+    
+
+  }
+
+  .header-link {
+    display: block; /* Ensure the link takes up the entire header section */
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from the parent */
+}
+
+  .indexchips {
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  .photorepeat {
+    background-image: url("/static/images/ace.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    overflow: visible;
+    background-position-y: top;
+    background-position-x: center;
+
+    
+    
+  }
+
+  
+    
+
+  .white-text {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+  }
+  .sample-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   
+  }
+  .sample-header-section {
+    position: relative;
+    padding: 15% 0 10%;
+    
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+    
+  }
+  h1 {
+    
+    position: relative;
+    font-weight: 500;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    z-index: -1;
+    
+  }
+  h2 {
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    
+    z-index: -1;
+    
+  }
+
+  
+  .sample-section-wrap {
+    position: relative;
+    background-color: white;
+  }
+  .sample-section {
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+  }
+
+  /* Login Grid Model */
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  justify-content: center;  
+  flex-wrap: nowrap;
+  min-height: 50vh;
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  }
+
+
+.column {
+            
+            padding: 20px;
+            
+            text-align: center;
+            font-size: xx-large;
+            overflow: hidden;
+        }
+
+
+        
+
+
+
+/* Buttons */
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:42px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:28px;
+	padding:32px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Text Input */
+
+.column input[type="text"] {
+  width: 100%;
+  height: 200%;
+  font-size: 40px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  margin: 10px;
+}

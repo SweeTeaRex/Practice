@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Welcome {{ name }}
+{% endblock %}
+
+{% block content %}
+<div>
+    <br>
+    <h1>{{ name }}'s Player Page</h1>
+</div>
+<div>
+    <br>
+    <h2>Player's Cash Amount: {{ bank }}</h2>
+</div>
+
+<div class="container">
+    <div class="column photorepeat">
+        
+    </div>
+    <div class="column">
+        <br>
+        <br>
+        <button class="myButton" onclick="window.location.href='/casino';">To Casino</button><br><br>
+        <a href="/" class="myButton">Home Page</a><br><br>
+        <a href="/howtoplay" class="myButton">How To Play</a><br><br>
+        <a href="/logout" class="myButton">Logout</a>
+        
+    </div>
+    <div class="column photorepeat">
+        
+    </div>
+    </div>
+{% endblock %}

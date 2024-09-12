@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+BlackJack College
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="sample-section-wrap">
+    <div class="sample-section">
+        <div>
+            <h1>BlackJack College</h1>
+            <h2>An interactive casino simulator with the game BlackJack</h2>
+        </div>  
+    </div>
+        <div class="container">
+            <div class="column photorepeat">
+                
+            </div>
+            <div class="column">
+                <p>
+                    BlackJack College is an open-source computer science project, developed with Python, Flask, CSS, HTML, and JavaScript. 
+                    The website is designed to teach you to play the card game BlackJack, then give you the opportunity to practice your knowledge with
+                    a BlackJack simulator. 
+                </p>
+                <div>
+                    <img src="static/images/chips.png" class="indexchips" alt="chips">
+                </div>
+                <div>
+                    <a href="/howtoplay" class="myButton">How to Play</a><br><br>
+                    {% if logged_in %}                    
+                    <a href="/playerpage" class="myButton">Dashboard</a><br><br>
+                    <a href="/casino" class="myButton">Casino</a><br><br>
+                    <a href="/logout" class="myButton">Log Out</a><br><br>
+                    {% else %}
+                    <a href="/login" class="myButton">Log In</a><br><br>
+                    <a href="/register" class="myButton">Register</a><br><br>
+                    {% endif %}
+                              
+                    
+                    <br>
+                    
+                </div>
+            </div>
+            <div class="column, photorepeat">
+                
+            </div>
+        </div> 
+    </div>
+
+
+
+
+
+{% endblock %}
